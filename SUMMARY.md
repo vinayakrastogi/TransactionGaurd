@@ -1,7 +1,5 @@
 # TransactionGuard — Complete Project Summary
 
-> **Who this document is for**: Anyone who wants to deeply understand this project — what it does, why every design decision was made, how the pipeline works end-to-end, and what alternatives were considered. Written in plain language so you can explain this in an interview or to a teammate who's never seen the codebase.
-
 ---
 
 ## Table of Contents
