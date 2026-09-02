@@ -1,0 +1,11 @@
+{
+  "dataset": "Synthetic (PaySim schema)",
+  "n_total": 500000,
+  "n_fraud": 763,
+  "fraud_pct": 0.1526,
+  "train_size": 400000,
+  "test_size": 100000,
+  "train_fraud": 610,
+  "test_fraud": 153,
+  "split": "stratified (80/20)"
+}

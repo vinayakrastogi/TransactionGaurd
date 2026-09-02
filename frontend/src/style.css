@@ -1,0 +1,133 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-bg-primary: #0d0f2b;
+    --color-bg-secondary: #12163a;
+    --color-bg-card: rgba(255, 255, 255, 0.04);
+    --color-border: rgba(255, 255, 255, 0.08);
+    --color-text-primary: #f0f4ff;
+    --color-text-secondary: #9ba3cc;
+    --color-accent: #5561fa;
+    --color-danger: #ff3636;
+    --color-success: #22c55e;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-bg-primary);
+    color: var(--color-text-primary);
+    font-family: 'Inter', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.03);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgba(85, 97, 250, 0.4);
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(85, 97, 250, 0.7);
+  }
+}
+
+@layer components {
+  .glass-card {
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    backdrop-filter: blur(12px);
+    border-radius: 12px;
+  }
+
+  .glass-card-hover {
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    backdrop-filter: blur(12px);
+    border-radius: 12px;
+    transition: all 0.2s ease;
+  }
+  .glass-card-hover:hover {
+    border-color: rgba(85, 97, 250, 0.4);
+    background: rgba(85, 97, 250, 0.06);
+    transform: translateY(-1px);
+    box-shadow: 0 8px 32px rgba(85, 97, 250, 0.15);
+  }
+
+  .badge-fraud {
+    background: rgba(255, 54, 54, 0.15);
+    color: #ff6b6b;
+    border: 1px solid rgba(255, 54, 54, 0.3);
+    padding: 2px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  .badge-legit {
+    background: rgba(34, 197, 94, 0.12);
+    color: #4ade80;
+    border: 1px solid rgba(34, 197, 94, 0.25);
+    padding: 2px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  .probability-bar {
+    height: 4px;
+    border-radius: 2px;
+    background: rgba(255, 255, 255, 0.08);
+    overflow: hidden;
+  }
+
+  .btn-primary {
+    background: linear-gradient(135deg, #5561fa, #4248ef);
+    color: white;
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 16px rgba(85, 97, 250, 0.3);
+  }
+  .btn-primary:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(85, 97, 250, 0.45);
+  }
+
+  .stat-card {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 20px 24px;
+  }
+
+  .table-row-hover {
+    transition: background 0.15s ease;
+    cursor: pointer;
+  }
+  .table-row-hover:hover {
+    background: rgba(85, 97, 250, 0.08);
+  }
+}
