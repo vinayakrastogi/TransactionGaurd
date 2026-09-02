@@ -4,14 +4,6 @@
 
 ---
 
-## Dataset
-
-> ⚠️ **Note**: The PaySim dataset requires Kaggle authentication for download. This project uses a **synthetic dataset generated with the identical PaySim schema** (`step`, `type`, `amount`, `nameOrig`, `oldbalanceOrg`, `newbalanceOrig`, `nameDest`, `oldbalanceDest`, `newbalanceDest`, `isFraud`, `isFlaggedFraud`).
->
-> The synthetic generator injects 40 controlled fraud ring patterns (3–5 hop chains of accounts that layer money through intermediaries before cashing out), matching PaySim's key properties: **0.15% fraud rate**, fraud occurring **only in TRANSFER and CASH_OUT** types, and log-normal balance distributions.
-
----
-
 ## Architecture
 
 ```
